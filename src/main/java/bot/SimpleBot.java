@@ -29,7 +29,7 @@ public class SimpleBot {
         // Calculate age
         int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
 
-        System.out.println("Your age is " + age + "; not bad, right?");
+        System.out.println(name + ", your age is " + age + "; not bad, right?");
 
         scanner.close();
     }
