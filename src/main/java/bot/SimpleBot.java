@@ -31,6 +31,17 @@ public class SimpleBot {
 
         System.out.println(name + ", your age is " + age + "; not bad, right?");
 
+        System.out.println("Now, I will prove to you that I can count to any number you want.");
+
+        // Read user input and count to the number starting from 0
+        System.out.print("Please enter a number for me to count to: ");
+        int number = scanner.nextInt();
+        for (int i = 0; i <= number; i++) {
+            System.out.println(i + "!");
+        }
+
+        System.out.println("Completed, have a nice day!");
+
         scanner.close();
     }
 }
