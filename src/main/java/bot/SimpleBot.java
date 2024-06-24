@@ -17,6 +17,10 @@ public class SimpleBot {
         // Count from 0 to n
         count();
 
+        // Test the user's programming knowledge
+        test();
+
+        // End the program
         end();
     }
 
@@ -43,7 +47,7 @@ public class SimpleBot {
         // Calculate age
         int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
         // Print the user's age
-        System.out.println(name + ", your age is " + age + "; not bad, right?");
+        System.out.println("Your age is " + age + "; not bad, right?");
     }
 
     static void count() {
@@ -58,8 +62,18 @@ public class SimpleBot {
     }
 
     static void test() {
+        int answer = 0;
         System.out.println("Let's test your programming knowledge.");
-        // Code goes here
+        System.out.println("Why do we use methods?");
+        System.out.println("1. To repeat a statement multiple times.");
+        System.out.println("2. To decompose a program into several small subroutines.");
+        System.out.println("3. To determine the execution time of a program.");
+        System.out.println("4. To interrupt the execution of a program.");
+
+        while (answer != 2) {
+            answer = scanner.nextInt();
+            System.out.println("Please, try again.");
+        }
     }
 
     static void end() {
